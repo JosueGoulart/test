@@ -1,0 +1,1 @@
+const tabuleiro = new Jogo();
