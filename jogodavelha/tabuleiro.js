@@ -23,7 +23,7 @@ class Tabuleiro {
             const colunaLista = this.valor[linha];
             for(let coluna = 0; coluna < colunaLista.length; coluna++) {
                 const itemContainer = this.#criaItemContainer(coluna, linha);
-                const textoConteudo = document.createTextNode(colunaLista[coluna] == 0 ? '' : colunaLista);
+                const textoConteudo = document.createTextNode(colunaLista[coluna] == 0 ? '' : colunaLista[coluna]);
                 itemContainer.appendChild(textoConteudo);
                 linhaContainer.appendChild(itemContainer);
             }
